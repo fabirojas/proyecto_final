@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sección de Noticias</title>
+  <link rel="icon" href="img/logo.png">
+ 
+</head>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle, #ffd6ec, #ffffff);
+    }
+
+    header {
+      background: linear-gradient(to right, #ff4ba8, #ff94de);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+
+
+
+    .subtitulo {
+      text-align: center;
+      font-size: 1.2em;
+      color: #555;
+      margin-top: -20px;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+
+
+    .noticia {
+      background-color: #fff5fb;
+      border-left: 8px solid #ff69b4;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      padding: 20px 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .noticia:hover {
+      transform: scale(1.02);
+    }
+
+    .noticia h2 {
+      color: #ff2e93;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .noticia p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .fecha {
+      font-size: 0.9em;
+      color: #888;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+
+    .noticia {
+      background-color: #fff5fb;
+      border: 1px solid #ffcbe2;
+      border-radius: 12px;
+      width: 280px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .noticia:hover {
+      transform: scale(1.03);
+    }
+
+    .noticia img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+
+    .noticia h2 {
+      font-size: 1em;
+      color: #d90072;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .noticia p {
+      font-size: 0.9em;
+      color: #444;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    .fecha {
+      font-size: 0.75em;
+      color: #999;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff66b2;
+      color: white;
+      padding: 18px 40px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .btn:hover {
+      background-color: #ff3385;
+    }
+
+    .noticias-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+
+    }
+
+    .noticia .btn {
+      align-self: center;
+      margin-top: 10px;
+    }
+
+
+    .boton-centro {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .titulo-noticias {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  color: #d6ae73e2;
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #e8c70b; /* dorado al pasar el cursor */
+}
+
+.footer {
+  background-color: #7fcae7;
+  color: #3b2323;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer .inline-icons a {
+  color: #07f717e2;
+  margin: 0 8px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+  </style>
+
+
+
+  <div class="titulo-noticias">
+    <h1>📰 ULTIMAS NOTICIAS DEL K-POP</h1>
+    <P>Enterate todo sobre tus grupos y idols favoritos </P>
+  </div>
+  <div class="noticias-container">
+    <div class="noticia">
+      <h2>BTS oficializa su regreso: la popular banda de ‘k-pop’ confirma un nuevo álbum y gira mundial
+
+      </h2>
+
+      <p class="fecha">EFE / El País|Seúl / Madrid|02 jul 2025 - 04:35 PET</p>
+      <img src="img/25.png" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        La ‘boyband’ surcoreana llevaba tres años en un “receso musical” mientras sus miembros cursaban el servicio
+        militar obligatorio en su país,En resumen, los fans de BTS pueden esperar un nuevo álbum y una gira mundial en
+        la primavera de 2026, después de que todos los miembros hayan completado su servicio militar.
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2>Segunda oportunidad: ¡Big Ocean vuelve a Europa en julio!
+
+      </h2>
+      <p class="fecha">Jun 11, 2025 Helen Bosch</p>
+      <img src="img/09.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        En abril, el grupo de chicos Big Ocean realizó su primera gira por Europa con 6 conciertos en Suiza, Italia,
+        Inglaterra y Francia. ¡Quienes se perdieron la gira ahora tienen una segunda oportunidad! ¡Big Ocean anunció
+        hace pocos días 6 nuevas fechas!,La segunda parte comienza el 11 de julio en Varsovia e incluye países que no
+        estaban en la gira original.
+
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2>Merch de Stray Kids: Conjuntos, Accesorios y tarjetas fotográficas exclusivas en resumen
+
+      </h2>
+      <p class="fecha">Jun 25, 2025 Helen Bosch</p>
+      <img src="img/12.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Desde 2018, Stray Kids conquistan el mundo entero con su música. Pero no solo sus canciones entusiasman a
+        los fans, sino también la gran variedad de merchandising, que se actualiza regularmente. Desde conjuntos
+        elegantes hasta accesorios coloridos y las clásicas tarjetas fotográficas, realmente hay algo para todos.
+      </p>
+    </div>
+    <div class="noticia">
+      <h2>BLACKPINK domina el Top10 de K-pop en iTunes México con Jump</h2>
+      <p class="fecha">Omar López
+
+        14 Jul, 2025 12:48 p.m. PE</p>
+      <img src="img/26.webp" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Las bandas femeninas como BLACKPINK y Twice han logrado consolidarse en el competido mundo del género
+        surcoreano
+        Algunos de los artistas más importantes que han ofrecido conciertos en tierras mexicanas son BlackPink en
+        2023, Twice en 2024, Stray Kids en 2025 y BTS, los cuales visitaron por primera vez el país en 2014, mucho
+        antes de que alcanzaran la popularidad mundial que hoy tienen.
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2>Wonyoung de IVE es investigado tras verse hinchado en el aeropuerto
+        Ella todavía luce hermosa.
+      </h2>
+      <p class="fecha">Koreaboo
+        hace 4 horas</p>
+      <img src="img/58.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Wonyoung de IVE está una vez más en el centro del escrutinio en línea, esta vez por su aparición en el
+        aeropuerto.
+
+        El 19 de julio, una publicación en un popular foro coreano en línea compartió fotos espontáneas de Wonyoung
+        llegando al aeropuerto de Incheon tras una apretada agenda en el extranjero. En las imágenes, el ídolo,
+        habitualmente elegante, lucía ligeramente hinchado y cansado, lo que generó críticas en internet.
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2>Un nuevo comienzo con LUN8: Lo que necesitas saber sobre estos corazones salvajes de quinta generación</h2>
+      <p class="fecha">Jenny Kang
+        9 de julio de 2023</p>
+      <img src="img/60.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        ¿Este grupo novato de Fantagio abrirá las puertas a la próxima generación del K-Pop? ❤️‍🔥 100%. El 15 de junio,
+        por primera vez desde 2016, la agencia de representación de ídolos de Corea del Sur, Fantagio , reveló que los
+        miembros Chael , Jinsu , Takuma , Junwoo , Ian , Ji Eunho , Dohyun y Eunseop debutarán como el grupo novato LUN8
+        .
+
+        Además de ser el grupo “dongsaeng” de ASTRO y tener a un ex concursante de I-LAND incluido en la lista de
+        miembros, ¡LUN8 ha ganado una enorme cantidad de atención por su apariencia y habilidades!
+
+
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2>Overpass Lima: Festival de k-pop traerá por primera a Kai de Exo, Minho de SHINee entre otros</h2>
+      <p class="fecha">JPamela Gonzales Cuadros Fecha Actualización
+        01/07/2025 - 18:16
+      </p>
+      <img src="img/61.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Lima se convertirá en la sede del festival de música k-pop, uno de los eventos internacionales más importantes
+        del género que ya tiene su line up completo.
+        Overpass, reconocido festival internacional de música k-pop llega por primera vez a Sudamérica: Perú y Chile han
+        sido los países elegidos como las sedes para reunir en un solo escenario a grandes cantantes del género k-pop.
+
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2> K-pop: la revolución musical y cultural que ha conquistado al mundo y a la generación Z</h2>
+      <p class="fecha">Adrián Romero
+
+        23.07.2025 | 17:45
+      </p>
+      <img src="img/14.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        El k-pop en España está de celebración. La banda surcoreana Stray Kids ofreció un concierto el martes y tiene
+        previsto otro esta noche en el estadio Riyadh Air Metropolitan de Madrid, con una presencia de 56.500 asistentes
+        por sesión. Esta corriente musical surgida dentro de la "ola cultural coreana", ha alcanzado un
+        reconocimiento que ha trascendido al país que la vio nacer.
+        Con su industria de idols, canciones que acumulan millones de reproducciones en YouTube, Spotify y TikTok, y una
+        legión de fans a sus espaldas.
+    </div>
+
+    <div class="noticia">
+      <h2> Jeon Somi publicará su segundo miniálbum en agosto</h2>
+      <p class="fecha">#Novedades de K-Pop l 2025-07-22
+      </p>
+      <img src="img/63.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        La solista Jeon Somi regresará el 11 de agosto con el lanzamiento de su segundo miniálbum, titulado “Chaotic &
+        Confused”, según informó el lunes 21 su agencia, The Black Label, a través de sus redes sociales oficiales.
+        Junto al anuncio, se reveló una imagen conceptual en la que la artista aparece con una camiseta de Mickey Mouse
+        y una corona, luciendo una expresión torcida que transmite inconformidad y que crea un efecto de ironía visual.
+        El estilismo, con un corte de pelo corto y un aire sofisticado, remite al concepto de su sencillo digital
+        “EXTRA”, estrenado el pasado 7 de julio.
+    </div>
+    <div class="noticia">
+      <h2> Taehyun de TXT y Chaewon de Le Sserafim colaboran con Jvke</h2>
+      <p class="fecha">#Novedades de K-Pop l 2025-07-14
+      </p>
+      <img src="img/64.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Los cantantes Taehyun, integrante de la banda Tomorrow X Together (TXT), y Kim Chaewon, de Le Sserafim,
+        participaron en el nuevo sencillo del músico estadounidense Jvke, titulado “Butterflies”, lanzado el 10 de
+        julio.
+        el tema, de estilo pop alegre y melódico, había sido anunciado previamente por Jvke a través de sus redes
+        sociales, lo que generó gran expectación entre sus seguidores y los fans del K-pop. Este estreno supone un nuevo
+        ejemplo de colaboración entre artistas coreanos y figuras del pop internacional.
+      </p>
+    </div>
+    <div class="noticia">
+      <h2>BigHit Music presenta su primer grupo masculino en seis años</h2>
+      <p class="fecha">Melodías de Corea 2025-07-18
+      </p>
+      <img src="img/65.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        La discográfica BigHit Music, conocida por ser la agencia de BTS y Tomorrow X Together (TXT), ha anunciado el
+        lanzamiento de su primer nuevo grupo masculino en seis años. La formación, compuesta por cinco miembros —Martin,
+        James, Joohoon, Sunghyun y Gunho—, debutará oficialmente el 18 de agosto.
+        La banda está compuesta íntegramente por adolescentes que participan activamente en todas las áreas creativas,
+        desde la composición de canciones y coreografías hasta la producción audiovisual y escénica. A diferencia de lo
+        habitual en la industria, no se les asignan roles fijos, sino que los cinco artistas colaboran de forma conjunta
+        en cada proceso.
+    </div>
+    <div class="noticia">
+      <h2>Seventeen iniciará su nueva gira mundial en septiembre</h2>
+      <p class="fecha">Melodías de Corea 2025-07-22
+      </p>
+      <img src="img/66.jpg" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        El grupo masculino Seventeen comenzará en septiembre una nueva gira mundial, según anunció su agencia, Pledis
+        Entertainment, el lunes 21.
+        El tour, titulado “SEVENTEEN WORLD TOUR [NEW_] IN INCHEON”, arrancará los días 13 y 14 de septiembre con dos
+        conciertos en el Estadio Principal de la Asiad de la ciudad de Incheon. Ambos espectáculos serán transmitidos en
+        directo por streaming, con el objetivo de llegar también a sus seguidores internacionales.
+        El nombre de la gira, “NEW_”, simboliza el nuevo rumbo que el grupo pretende emprender. El guion bajo (“_”) tras
+        la palabra “NEW” representa las infinitas posibilidades aún por explorar en su carrera artística.
+      </p>
+    </div>
+    <div class="noticia">
+      <h2>HYUNA, COMIENZA UNA RELACION PÚBLICA CON YONG JUNHYUNG</h2>
+      <p class="fecha">Gkpop enero 18, 2024
+      </p>
+      <img src="img/2.webp" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Hyuna y Yong Junhyung han comenzado una relación pública, anunciando su romance a través de una foto compartida
+        en sus cuentas oficiales el 18 de enero. En la imagen, se puede ver a una pareja caminando de la mano por la
+        playa. Hyuna etiquetó la cuenta oficial de Yong Junhyung en la espalda del hombre y añadió: "Por favor, miren
+        bonito hacia nosotros". Hyuna también hizo clic en el botón de "Me gusta" en respuesta a los comentarios de
+        apoyo de los fanáticos.
+        En relación con esta noticia, la agencia de Yong Junhyung, Black Made, declaró a Newsen en la mañana del 19 de
+        enero: "Estamos verificando".
+
+
+
+      </p>
+    </div>
+    <div class="noticia">
+      <h2>El Regreso Triunfal de Lee Jun-ho a la Música con 'Can I' en Coreano</h2>
+      <p class="fecha">Gkpop noviembre 02, 2023
+      </p>
+      <img src="img/67.webp" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        El miembro del grupo 2PM, Lee Jun-ho, regresa a su carrera musical con un sencillo especial en coreano. Se trata
+        de la canción "Can I", que lanzó para celebrar su décimo aniversario como solista en Japón y que ahora
+        interpreta en su idioma natal.
+
+
+
+        Según su agencia JYP Entertainment, el sencillo "Can I (versión coreana)" se lanzará en las principales
+        plataformas de música el 3 de noviembre de 2023 a las 6 de la tarde. Lee Jun-ho, quien escribió la letra, y Hong
+        Ji-sang, conocido productor, colaboraron en la composición y arreglo de la canción.
+      </p>
+    </div>
+
+    <div class="noticia">
+      <h2>Los internautas se fijan en el número de ídolos japoneses del K-Pop: 58 han debutado hasta ahora</h2>
+      <p class="fecha">7 de abril de 2023 por Kpop Idols
+      </p>
+      <img src="img/68.png" alt="BTS comeback" class="imagen-noticia">
+      <p class="contenido">
+        Hoy en día es habitual ver a miembros no coreanos en los grupos de K-Pop. A medida que el K-Pop se convierte en
+        un fenómeno global, cada vez debutan más ídolos de distintos países. Uno de los países con más ídolos de K-Pop
+        no coreanos debutantes no es otro que Japón.
+
+        Echemos un vistazo a algunas de las idols japonesas de K-Pop que han debutado hasta ahora.
+
+
+
+        Sana, Momo y Mina debutaron como miembros de TWICE en 2015. En 2023, el trío debutó en Japón como el primer grupo sub-unidad de TWICE llamado MISAMO.
+       
+      </p>
+    </div>
+      
+  </div>
+  <div class="boton-centro">
+    <a href="Inicio.html" class="btn">Volver</a>
+  </div>
+  <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; Página diseñada por FABI DONGO.| K-POP"FEVER"". Todos los derechos reservados.2025.</p>
+    <div class="social-icons">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.telegram.com/" target="_blank"><i class="fab fa-telegram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
